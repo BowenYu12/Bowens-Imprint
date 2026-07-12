@@ -1,104 +1,86 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-language="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#e8e8e6">
+    <meta name="theme-color" content="#ececea">
     <meta name="description" content="Privacy Policy for Usage, an iOS app by Bowen's Imprint.">
     <title>Privacy Policy for Usage | Bowen's Imprint</title>
     <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="../../assets/styles.css">
+    <script src="../../assets/i18n.js" defer></script>
+    <script src="../../assets/main.js" defer></script>
   </head>
-  <body class="legal-page">
-    <a class="skip-link" href="#policy">Skip to policy</a>
+  <body class="legal-page" data-page="privacy">
+    <a class="skip-link" href="#policy" data-i18n="shared.skipPolicy">Skip to privacy policy</a>
 
     <header class="site-header">
-      <div class="header-inner">
-        <a class="site-mark" href="../../" aria-label="Bowen's Imprint home">
-          <span>Bowen's Imprint</span>
-          <span lang="zh-Hans">博文之痕</span>
-        </a>
-        <span class="header-note">Usage · Privacy</span>
+      <div class="header-inner page-shell">
+        <a class="site-mark" href="../../" data-i18n="shared.brand" data-i18n-aria-label="shared.homeLabel" aria-label="Bowen's Imprint home">Bowen's Imprint</a>
+        <nav class="header-nav" data-i18n-aria-label="shared.navLabel" aria-label="Primary navigation">
+          <a href="../../" data-i18n="shared.navHome">Home</a>
+          <a href="./" aria-current="page" data-i18n="shared.navPrivacy">Privacy</a>
+          <a href="../../support/usage/" data-i18n="shared.navSupport">Support</a>
+        </nav>
+        <button class="language-toggle" type="button" data-language-toggle aria-label="Switch to Chinese" title="Switch to Chinese">中文</button>
       </div>
     </header>
 
-    <main class="legal-main" id="policy">
-      <a class="document-back" href="../../">← Back to index</a>
+    <main class="legal-main page-shell" id="policy">
+      <a class="document-back" href="../../" data-i18n="privacy.back">Back to home</a>
 
       <header class="legal-hero">
-        <h1>Privacy Policy<br>for Usage</h1>
-        <p class="legal-date">Effective July 8, 2026</p>
+        <p class="eyebrow" data-i18n="privacy.pageNote">Usage · Privacy</p>
+        <h1 data-i18n="privacy.title">Privacy Policy for Usage</h1>
+        <p class="legal-date" data-i18n="privacy.effectiveDate">Effective July 8, 2026</p>
       </header>
 
       <article class="legal-document">
-        <section class="legal-block" aria-labelledby="english-policy">
-          <h2 class="legal-language" id="english-policy">English</h2>
-          <div class="legal-copy">
-            <p>Usage is designed to help users understand and track their usage-related information in a simple and visual way.</p>
+        <p class="legal-intro" data-i18n="privacy.intro">Usage is designed to help users understand and track their usage-related information in a simple and visual way.</p>
 
-            <h2>Information We Collect</h2>
-            <p>Usage does not collect, sell, or share personal information with third parties.</p>
-            <p>The app may store usage-related settings, display preferences, history records, and app configuration data locally on the user's device. This data is used only to provide the app's core features.</p>
-
-            <h2>Network and API Configuration</h2>
-            <p>Usage may connect to supported online services only when required for app functionality. Any authentication or configuration information is used only to enable the user-requested features and is not sold or shared with advertisers.</p>
-
-            <h2>Local Storage</h2>
-            <p>Some information may be stored locally on the user's device or in shared app storage for widgets and app functionality. Users may remove the app from their device to delete locally stored app data.</p>
-
-            <h2>Third-Party Services</h2>
-            <p>Usage may interact with Apple system services and supported API services only as necessary for app functionality. Usage does not use third-party advertising trackers.</p>
-
-            <h2>Children's Privacy</h2>
-            <p>Usage is not directed to children under the age of 13. We do not knowingly collect personal information from children.</p>
-
-            <h2>Contact</h2>
-            <p>If you have any questions about this Privacy Policy, contact:<br>
-              <a href="mailto:by294517@my.ncwu.edu">by294517@my.ncwu.edu</a>
-            </p>
-          </div>
+        <section>
+          <h2 data-i18n="privacy.informationTitle">Information We Collect</h2>
+          <p data-i18n="privacy.informationP1">Usage does not collect, sell, or share personal information with third parties.</p>
+          <p data-i18n="privacy.informationP2">The app may store usage-related settings, display preferences, history records, and app configuration data locally on the user's device. This data is used only to provide the app's core features.</p>
         </section>
 
-        <section class="legal-block" lang="zh-Hans" aria-labelledby="chinese-policy">
-          <h2 class="legal-language" id="chinese-policy">中文</h2>
-          <div class="legal-copy">
-            <p>Usage 是一款用于帮助用户理解和查看使用量相关信息的轻量工具。</p>
-            <p>生效日期：2026年7月8日</p>
+        <section>
+          <h2 data-i18n="privacy.networkTitle">Network and API Configuration</h2>
+          <p data-i18n="privacy.networkP">Usage may connect to supported online services only when required for app functionality. Any authentication or configuration information is used only to enable the user-requested features and is not sold or shared with advertisers.</p>
+        </section>
 
-            <h2>我们收集的信息</h2>
-            <p>Usage 不会收集、出售或向第三方分享用户的个人信息。</p>
-            <p>App 可能会在用户设备本地保存使用量相关设置、显示偏好、历史记录和应用配置数据。这些数据仅用于提供 App 的核心功能。</p>
+        <section>
+          <h2 data-i18n="privacy.storageTitle">Local Storage</h2>
+          <p data-i18n="privacy.storageP">Some information may be stored locally on the user's device or in shared app storage for widgets and app functionality. Users may remove the app from their device to delete locally stored app data.</p>
+        </section>
 
-            <h2>网络与 API 配置</h2>
-            <p>Usage 可能会在功能需要时连接到受支持的在线服务。任何认证或配置信息仅用于用户请求的功能，不会出售或分享给广告商。</p>
+        <section>
+          <h2 data-i18n="privacy.thirdPartyTitle">Third-Party Services</h2>
+          <p data-i18n="privacy.thirdPartyP">Usage may interact with Apple system services and supported API services only as necessary for app functionality. Usage does not use third-party advertising trackers.</p>
+        </section>
 
-            <h2>本地存储</h2>
-            <p>部分信息可能会保存在用户设备本地，或用于小组件和 App 功能的共享存储中。用户可以通过删除 App 来移除本地保存的数据。</p>
+        <section>
+          <h2 data-i18n="privacy.childrenTitle">Children's Privacy</h2>
+          <p data-i18n="privacy.childrenP">Usage is not directed to children under the age of 13. We do not knowingly collect personal information from children.</p>
+        </section>
 
-            <h2>第三方服务</h2>
-            <p>Usage 可能会在必要时与 Apple 系统服务或受支持的 API 服务交互。Usage 不使用第三方广告追踪器。</p>
-
-            <h2>儿童隐私</h2>
-            <p>Usage 并非面向 13 岁以下儿童。我们不会有意收集儿童的个人信息。</p>
-
-            <h2>联系方式</h2>
-            <p>如果您对本隐私政策有任何问题，请联系：<br>
-              <a href="mailto:by294517@my.ncwu.edu">by294517@my.ncwu.edu</a>
-            </p>
-          </div>
+        <section>
+          <h2 data-i18n="privacy.contactTitle">Contact</h2>
+          <p data-i18n="privacy.contactP">If you have any questions about this Privacy Policy, contact:</p>
+          <p><a href="mailto:by294517@my.ncwu.edu">by294517@my.ncwu.edu</a></p>
         </section>
       </article>
     </main>
 
     <footer class="site-footer legal-footer">
-      <div class="footer-inner">
-        <p class="footer-name">Bowen's Imprint <span lang="zh-Hans">/ 博文之痕</span></p>
+      <div class="footer-inner page-shell">
+        <p class="footer-name" data-i18n="shared.brand">Bowen's Imprint</p>
         <a class="footer-contact" href="mailto:by294517@my.ncwu.edu">by294517@my.ncwu.edu</a>
-        <nav class="footer-links" aria-label="Legal and support links">
-          <a href="./" aria-current="page">Usage Privacy</a>
-          <a href="../../support/usage/">Support</a>
+        <nav class="footer-links" data-i18n-aria-label="shared.footerNavLabel" aria-label="Legal and support links">
+          <a href="./" aria-current="page" data-i18n="shared.navPrivacy">Privacy</a>
+          <a href="../../support/usage/" data-i18n="shared.navSupport">Support</a>
         </nav>
-        <p class="footer-year">© 2026 Bowen</p>
+        <p class="footer-year" data-i18n="shared.copyright">© 2026 Bowen</p>
       </div>
     </footer>
   </body>

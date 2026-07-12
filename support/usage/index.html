@@ -1,81 +1,65 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-language="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#e8e8e6">
+    <meta name="theme-color" content="#ececea">
     <meta name="description" content="Support for Usage, an iOS app by Bowen's Imprint.">
     <title>Usage Support | Bowen's Imprint</title>
     <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="../../assets/styles.css">
+    <script src="../../assets/i18n.js" defer></script>
+    <script src="../../assets/main.js" defer></script>
   </head>
-  <body class="legal-page">
-    <a class="skip-link" href="#support">Skip to support</a>
+  <body class="legal-page" data-page="support">
+    <a class="skip-link" href="#support" data-i18n="shared.skipSupport">Skip to support</a>
 
     <header class="site-header">
-      <div class="header-inner">
-        <a class="site-mark" href="../../" aria-label="Bowen's Imprint home">
-          <span>Bowen's Imprint</span>
-          <span lang="zh-Hans">博文之痕</span>
-        </a>
-        <span class="header-note">Usage · Support</span>
+      <div class="header-inner page-shell">
+        <a class="site-mark" href="../../" data-i18n="shared.brand" data-i18n-aria-label="shared.homeLabel" aria-label="Bowen's Imprint home">Bowen's Imprint</a>
+        <nav class="header-nav" data-i18n-aria-label="shared.navLabel" aria-label="Primary navigation">
+          <a href="../../" data-i18n="shared.navHome">Home</a>
+          <a href="../../privacy/usage/" data-i18n="shared.navPrivacy">Privacy</a>
+          <a href="./" aria-current="page" data-i18n="shared.navSupport">Support</a>
+        </nav>
+        <button class="language-toggle" type="button" data-language-toggle aria-label="Switch to Chinese" title="Switch to Chinese">中文</button>
       </div>
     </header>
 
-    <main class="legal-main" id="support">
-      <a class="document-back" href="../../">← Back to index</a>
+    <main class="legal-main page-shell" id="support">
+      <a class="document-back" href="../../" data-i18n="support.back">Back to home</a>
 
       <header class="legal-hero">
-        <h1>Usage<br>Support</h1>
-        <p class="legal-date">Response by email</p>
+        <p class="eyebrow" data-i18n="support.pageNote">Usage · Support</p>
+        <h1 data-i18n="support.title">Usage Support</h1>
+        <p class="legal-date" data-i18n="support.responseNote">Response by email</p>
       </header>
 
-      <article class="legal-document">
-        <section class="legal-block" aria-labelledby="english-support">
-          <h2 class="legal-language" id="english-support">English</h2>
-          <div class="legal-copy">
-            <p>If you need help with Usage, contact:<br>
-              <a href="mailto:by294517@my.ncwu.edu">by294517@my.ncwu.edu</a>
-            </p>
+      <article class="legal-document support-document">
+        <p class="legal-intro" data-i18n="support.intro">If you need help with Usage, contact:</p>
+        <p class="support-email"><a href="mailto:by294517@my.ncwu.edu">by294517@my.ncwu.edu</a></p>
 
-            <h2>When contacting support, please include</h2>
-            <ul>
-              <li>App name</li>
-              <li>Device model</li>
-              <li>iOS version</li>
-              <li>A short description of the issue</li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="legal-block" lang="zh-Hans" aria-labelledby="chinese-support">
-          <h2 class="legal-language" id="chinese-support">中文</h2>
-          <div class="legal-copy">
-            <p>如果您需要 Usage 的相关帮助，请联系：<br>
-              <a href="mailto:by294517@my.ncwu.edu">by294517@my.ncwu.edu</a>
-            </p>
-
-            <h2>联系时请尽量提供</h2>
-            <ul>
-              <li>App 名称</li>
-              <li>设备型号</li>
-              <li>iOS 版本</li>
-              <li>问题的简短描述</li>
-            </ul>
-          </div>
+        <section>
+          <h2 data-i18n="support.includeTitle">When contacting support, please include</h2>
+          <ul>
+            <li data-i18n="support.appName">App name</li>
+            <li data-i18n="support.deviceModel">Device model</li>
+            <li data-i18n="support.iosVersion">iOS version</li>
+            <li data-i18n="support.issueDescription">A short description of the issue</li>
+          </ul>
         </section>
       </article>
     </main>
 
     <footer class="site-footer legal-footer">
-      <div class="footer-inner">
-        <p class="footer-name">Bowen's Imprint <span lang="zh-Hans">/ 博文之痕</span></p>
+      <div class="footer-inner page-shell">
+        <p class="footer-name" data-i18n="shared.brand">Bowen's Imprint</p>
         <a class="footer-contact" href="mailto:by294517@my.ncwu.edu">by294517@my.ncwu.edu</a>
-        <nav class="footer-links" aria-label="Legal and support links">
-          <a href="../../privacy/usage/">Usage Privacy</a>
-          <a href="./" aria-current="page">Support</a>
+        <nav class="footer-links" data-i18n-aria-label="shared.footerNavLabel" aria-label="Legal and support links">
+          <a href="../../privacy/usage/" data-i18n="shared.navPrivacy">Privacy</a>
+          <a href="./" aria-current="page" data-i18n="shared.navSupport">Support</a>
         </nav>
-        <p class="footer-year">© 2026 Bowen</p>
+        <p class="footer-year" data-i18n="shared.copyright">© 2026 Bowen</p>
       </div>
     </footer>
   </body>

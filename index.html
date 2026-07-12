@@ -1,144 +1,163 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-language="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#e8e8e6">
-    <meta name="description" content="Bowen's Imprint / 博文之痕 — software, games, writing, and photography by Bowen.">
-    <title>Bowen's Imprint / 博文之痕</title>
+    <meta name="theme-color" content="#ececea">
+    <meta name="description" content="Independent software, games, writing, and photography by Bowen.">
+    <title>Bowen's Imprint</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="preload" href="assets/images/usage.webp" as="image" type="image/webp">
     <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/i18n.js" defer></script>
     <script src="assets/main.js" defer></script>
   </head>
-  <body>
-    <a class="skip-link" href="#works">Skip to works</a>
+  <body data-page="home">
+    <a class="skip-link" href="#works" data-i18n="shared.skipWorks">Skip to work</a>
 
     <header class="site-header">
-      <div class="header-inner">
-        <a class="site-mark" href="./" aria-label="Bowen's Imprint home">
-          <span>Bowen's Imprint</span>
-          <span lang="zh-Hans">博文之痕</span>
-        </a>
-        <nav class="header-nav" aria-label="Primary navigation">
-          <a href="#works">Work <span>04</span></a>
-          <a href="privacy/usage/">Usage</a>
-          <a href="mailto:by294517@my.ncwu.edu">Contact</a>
+      <div class="header-inner page-shell">
+        <a class="site-mark" href="./" data-i18n="shared.brand" data-i18n-aria-label="shared.homeLabel" aria-label="Bowen's Imprint home">Bowen's Imprint</a>
+        <nav class="header-nav" data-i18n-aria-label="shared.navLabel" aria-label="Primary navigation">
+          <a href="#works" data-i18n="shared.navWork">Work</a>
+          <a href="#about" data-i18n="shared.navAbout">About</a>
+          <a href="privacy/usage/" data-i18n="shared.navPrivacy">Privacy</a>
+          <a href="mailto:by294517@my.ncwu.edu" data-i18n="shared.navContact">Contact</a>
         </nav>
-        <span class="header-note">Personal archive · 2026</span>
+        <button class="language-toggle" type="button" data-language-toggle aria-label="Switch to Chinese" title="Switch to Chinese">中文</button>
       </div>
     </header>
 
     <main>
-      <section class="intro" aria-labelledby="page-title">
-        <div class="intro-inner">
-          <div class="intro-meta" aria-hidden="true">
-            <span>Independent work</span>
-            <span>Software · Games · Writing · Photography</span>
-            <span>Edition 01</span>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-grid page-shell">
+          <div class="hero-heading">
+            <p class="eyebrow" data-i18n="home.eyebrow">Independent creator · Software · Games · Writing · Photography</p>
+            <h1 id="page-title" data-i18n="home.heroTitle">Bowen's Imprint</h1>
           </div>
-          <h1 id="page-title">Bowen's Imprint</h1>
-          <div class="intro-credit">
-            <span lang="zh-Hans">博文之痕</span>
-            <a href="#works">View index ↓</a>
+          <div class="hero-copy">
+            <p data-i18n="home.heroBody">A personal archive of independent software, games, writing, and photographs — finished work, evolving prototypes, and the ideas between them.</p>
+            <div class="text-links">
+              <a href="#works" data-i18n="home.viewWork">View selected work</a>
+              <a href="mailto:by294517@my.ncwu.edu" data-i18n="home.contact">Contact Bowen</a>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="project-index" id="works" aria-labelledby="works-title">
-        <header class="index-header">
-          <h2 id="works-title">Selected work</h2>
-          <p>Four ongoing projects · Updated July 2026</p>
+      <section class="works page-shell" id="works" aria-labelledby="works-title">
+        <header class="section-intro">
+          <h2 id="works-title" data-i18n="home.workTitle">Selected Work</h2>
+          <p data-i18n="home.workIntro">Four ongoing projects across software, games, writing, and photography.</p>
         </header>
+
         <div class="project-grid">
           <article class="project">
-            <div class="project-meta">
-              <span>01</span>
-              <span>Application</span>
-              <span>iOS · 2026</span>
-            </div>
-            <div class="project-visual" tabindex="0" data-project aria-label="Usage, iOS application">
-              <img src="assets/images/usage.webp" width="1800" height="1350" alt="Usage iOS app interface showing current and weekly AI usage" fetchpriority="high">
+            <div class="project-visual" tabindex="0" data-project data-i18n-aria-label="home.projects.usage.aria" aria-label="Usage, an iOS application">
+              <img src="assets/images/usage.webp" width="1800" height="1350" data-i18n-alt="home.projects.usage.alt" alt="Usage iOS app interface showing current and weekly AI usage" fetchpriority="high">
               <div class="project-overlay">
-                <p class="project-state">Available for iOS</p>
-                <div class="project-details">
-                  <h3>Usage</h3>
-                  <p>A clear view of AI usage and reset rhythm.</p>
-                  <nav class="project-links" aria-label="Usage links">
-                    <a href="privacy/usage/">Privacy</a>
-                    <a href="support/usage/">Support</a>
+                <p class="project-state" data-i18n="home.projects.usage.state">Available for iOS</p>
+                <div class="project-overlay-copy">
+                  <p data-i18n="home.projects.usage.description">A clear view of AI usage, reset timing, and weekly rhythm.</p>
+                  <nav class="project-links" data-i18n-aria-label="home.projects.usage.linksLabel" aria-label="Usage links">
+                    <a href="privacy/usage/" data-i18n="home.projects.usage.privacy">Privacy</a>
+                    <a href="support/usage/" data-i18n="home.projects.usage.support">Support</a>
                   </nav>
                 </div>
               </div>
             </div>
-          </article>
-
-          <article class="project">
-            <div class="project-meta">
-              <span>02</span>
-              <span>Game</span>
-              <span>Prototype · 2026</span>
-            </div>
-            <div class="project-visual" tabindex="0" data-project aria-label="Thunder Fighter, experimental game">
-              <img src="assets/images/thunder-fighter.webp" width="1800" height="1350" alt="Thunder Fighter space combat interface with aircraft, enemies, and equipment HUD" loading="lazy">
-              <div class="project-overlay">
-                <p class="project-state">In development</p>
-                <div class="project-details">
-                  <h3>Thunder Fighter</h3>
-                  <p>Aircraft combat, pilots, systems, and upgrades.</p>
-                </div>
+            <div class="project-caption">
+              <div>
+                <p class="project-category"><span>01</span><span data-i18n="home.projects.usage.category">Application</span></p>
+                <h3 data-i18n="home.projects.usage.title">Usage</h3>
               </div>
+              <p class="project-meta" data-i18n="home.projects.usage.meta">iOS · 2026</p>
             </div>
           </article>
 
           <article class="project">
-            <div class="project-meta">
-              <span>03</span>
-              <span>Writing</span>
-              <span>15 chapters</span>
-            </div>
-            <div class="project-visual" tabindex="0" data-project aria-label="Ten Weapons, Chinese novel">
-              <img src="assets/images/ten-weapons.webp" width="1800" height="1350" alt="Dark green book cover for the Chinese novel Ten Weapons" loading="lazy">
+            <div class="project-visual" tabindex="0" data-project data-i18n-aria-label="home.projects.game.aria" aria-label="Thunder Fighter, an experimental game">
+              <img src="assets/images/thunder-fighter.webp" width="1800" height="1350" data-i18n-alt="home.projects.game.alt" alt="Thunder Fighter space combat interface with aircraft, enemies, and equipment HUD" loading="lazy">
               <div class="project-overlay">
-                <p class="project-state">Manuscript</p>
-                <div class="project-details">
-                  <h3>Ten Weapons <span lang="zh-Hans">十把武器</span></h3>
-                  <p>A long-form wuxia world told through people and weapons.</p>
+                <p class="project-state" data-i18n="home.projects.game.state">In development</p>
+                <div class="project-overlay-copy">
+                  <p data-i18n="home.projects.game.description">Aircraft combat shaped by pilots, equipment, systems, and upgrades.</p>
                 </div>
               </div>
+            </div>
+            <div class="project-caption">
+              <div>
+                <p class="project-category"><span>02</span><span data-i18n="home.projects.game.category">Game</span></p>
+                <h3 data-i18n="home.projects.game.title">Thunder Fighter</h3>
+              </div>
+              <p class="project-meta" data-i18n="home.projects.game.meta">Prototype · 2026</p>
             </div>
           </article>
 
           <article class="project">
-            <div class="project-meta">
-              <span>04</span>
-              <span>Photography</span>
-              <span>Open archive</span>
-            </div>
-            <div class="project-visual" tabindex="0" data-project aria-label="Photography archive">
-              <img src="assets/images/photography-placeholder.webp" width="1800" height="1350" alt="Quiet architectural light and shadow reserved for the photography archive" loading="lazy">
+            <div class="project-visual" tabindex="0" data-project data-i18n-aria-label="home.projects.book.aria" aria-label="Ten Weapons, a Chinese wuxia novel">
+              <img src="assets/images/ten-weapons.webp" width="1800" height="1350" data-i18n-alt="home.projects.book.alt" alt="Dark green book cover for the novel Ten Weapons" loading="lazy">
               <div class="project-overlay">
-                <p class="project-state">First selection pending</p>
-                <div class="project-details">
-                  <h3>Photography</h3>
-                  <p>Personal observations, awaiting the first selection.</p>
+                <p class="project-state" data-i18n="home.projects.book.state">Manuscript</p>
+                <div class="project-overlay-copy">
+                  <p data-i18n="home.projects.book.description">A long-form wuxia world told through its people and weapons.</p>
                 </div>
               </div>
+            </div>
+            <div class="project-caption">
+              <div>
+                <p class="project-category"><span>03</span><span data-i18n="home.projects.book.category">Writing</span></p>
+                <h3 data-i18n="home.projects.book.title">Ten Weapons</h3>
+              </div>
+              <p class="project-meta" data-i18n="home.projects.book.meta">15 chapters</p>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-visual" tabindex="0" data-project data-i18n-aria-label="home.projects.photography.aria" aria-label="Photography archive">
+              <img src="assets/images/photography-placeholder.webp" width="1800" height="1350" data-i18n-alt="home.projects.photography.alt" alt="Quiet architectural light and shadow reserved for the photography archive" loading="lazy">
+              <div class="project-overlay">
+                <p class="project-state" data-i18n="home.projects.photography.state">First selection pending</p>
+                <div class="project-overlay-copy">
+                  <p data-i18n="home.projects.photography.description">Personal observations, travel fragments, and quiet records of place.</p>
+                </div>
+              </div>
+            </div>
+            <div class="project-caption">
+              <div>
+                <p class="project-category"><span>04</span><span data-i18n="home.projects.photography.category">Photography</span></p>
+                <h3 data-i18n="home.projects.photography.title">Photography</h3>
+              </div>
+              <p class="project-meta" data-i18n="home.projects.photography.meta">Open archive</p>
             </div>
           </article>
         </div>
       </section>
+
+      <section class="about page-shell" id="about" aria-labelledby="about-title">
+        <header class="section-intro about-heading">
+          <h2 id="about-title" data-i18n="home.aboutTitle">About</h2>
+          <p data-i18n="home.aboutKicker">Independent archive · Since 2026</p>
+        </header>
+        <div class="about-copy">
+          <p data-i18n="home.aboutBody">Bowen's Imprint is a public home for my independent software, games, writing, photography, and design experiments. It keeps released work and early ideas together without turning them into a pitch deck.</p>
+          <a href="mailto:by294517@my.ncwu.edu">
+            <span data-i18n="home.emailLabel">Write to me</span>
+            <strong>by294517@my.ncwu.edu</strong>
+          </a>
+        </div>
+      </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="footer-inner">
-        <p class="footer-name">Bowen's Imprint <span lang="zh-Hans">/ 博文之痕</span></p>
+    <footer class="site-footer" id="contact">
+      <div class="footer-inner page-shell">
+        <p class="footer-name" data-i18n="shared.brand">Bowen's Imprint</p>
         <a class="footer-contact" href="mailto:by294517@my.ncwu.edu">by294517@my.ncwu.edu</a>
-        <nav class="footer-links" aria-label="Legal and support links">
-          <a href="privacy/usage/">Usage Privacy</a>
-          <a href="support/usage/">Support</a>
+        <nav class="footer-links" data-i18n-aria-label="shared.footerNavLabel" aria-label="Legal and support links">
+          <a href="privacy/usage/" data-i18n="shared.navPrivacy">Privacy</a>
+          <a href="support/usage/" data-i18n="shared.navSupport">Support</a>
         </nav>
-        <p class="footer-year">© 2026 Bowen</p>
+        <p class="footer-year" data-i18n="shared.copyright">© 2026 Bowen</p>
       </div>
     </footer>
   </body>

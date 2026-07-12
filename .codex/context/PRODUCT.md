@@ -5,7 +5,7 @@
 - Name: **Bowen's Imprint / 博文之痕**.
 - Type: public personal portfolio, archive, and product-support website.
 - Hosting intent: static GitHub Pages site served from the repository root.
-- Languages: homepage and Usage policy/support content include English and Chinese.
+- Languages: English and Chinese are fully separated modes; English is the default.
 
 ## Public purpose
 
@@ -16,14 +16,15 @@
 
 ## Experience
 
-- Light-first editorial presentation with a neutral gray field, compact navigation,
-  restrained metadata, and a high-contrast bilingual masthead.
-- Homepage is structured as a project index: masthead, four numbered image-led
-  modules in a desktop grid/mobile list, and a compact footer.
-- Project names and metadata appear on mouse hover, keyboard focus, or mobile tap.
+- Light-first editorial presentation with a neutral gray field, restrained type,
+  generous spacing, and one language visible at a time.
+- Homepage contains a concise brand hero, four image-led projects, an About/contact
+  section, and a compact footer.
+- Project names and metadata are always visible; supporting descriptions appear on
+  mouse hover, keyboard focus, or mobile tap.
 - Current modules are Usage, Thunder Fighter, Ten Weapons, and Photography.
-- Usage has dedicated, bilingual privacy and support pages using the same visual
-  system.
+- Usage has dedicated privacy and support pages that follow the selected locale.
+- Language choice persists across pages in local storage.
 - Contact address is published on the site and in support/policy content.
 
 ## Media status
