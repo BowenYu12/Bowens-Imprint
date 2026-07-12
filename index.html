@@ -3,138 +3,143 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Bowen's Imprint / 博文之痕 is a personal archive of software, games, writing, photography, and experiments.">
+    <meta name="theme-color" content="#e8e8e6">
+    <meta name="description" content="Bowen's Imprint / 博文之痕 — software, games, writing, and photography by Bowen.">
     <title>Bowen's Imprint / 博文之痕</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/images/usage.webp" as="image" type="image/webp">
     <link rel="stylesheet" href="assets/styles.css">
     <script src="assets/main.js" defer></script>
   </head>
   <body>
-    <div class="site-shell">
-      <header class="site-header">
-        <nav class="nav" aria-label="Primary navigation">
-          <a class="brand" href="./" aria-label="Bowen's Imprint home">
-            <strong>Bowen's Imprint</strong>
-            <span>博文之痕</span>
-          </a>
-          <div class="nav-links">
-            <a href="./">Home</a>
-            <a href="#apps">Apps</a>
-            <a href="#games">Games</a>
-            <a href="#books">Books</a>
-            <a href="#photography">Photography</a>
-            <a href="#about">About</a>
-            <a href="privacy/usage/">Usage Privacy</a>
-            <button class="theme-toggle" type="button" data-theme-toggle>Light</button>
-          </div>
+    <a class="skip-link" href="#works">Skip to works</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="site-mark" href="./" aria-label="Bowen's Imprint home">
+          <span>Bowen's Imprint</span>
+          <span lang="zh-Hans">博文之痕</span>
+        </a>
+        <nav class="header-nav" aria-label="Primary navigation">
+          <a href="#works">Work <span>04</span></a>
+          <a href="privacy/usage/">Usage</a>
+          <a href="mailto:by294517@my.ncwu.edu">Contact</a>
         </nav>
-      </header>
+        <span class="header-note">Personal archive · 2026</span>
+      </div>
+    </header>
 
-      <main>
-        <section class="hero" id="home">
-          <div>
-            <p class="eyebrow">Personal archive</p>
-            <h1>Bowen's Imprint</h1>
-            <p class="han-title">博文之痕</p>
-            <p class="hero-copy">A personal archive of software, games, writing, photography, and experiments.</p>
-            <p class="hero-copy">一个关于软件、游戏、文字、摄影与实验作品的个人档案。</p>
-            <div class="hero-actions">
-              <a class="button" href="#works">View Works</a>
-              <a class="button secondary" href="privacy/usage/">Usage Privacy Policy</a>
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-inner">
+          <div class="intro-meta" aria-hidden="true">
+            <span>Independent work</span>
+            <span>Software · Games · Writing · Photography</span>
+            <span>Edition 01</span>
+          </div>
+          <h1 id="page-title">Bowen's Imprint</h1>
+          <div class="intro-credit">
+            <span lang="zh-Hans">博文之痕</span>
+            <a href="#works">View index ↓</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-index" id="works" aria-labelledby="works-title">
+        <header class="index-header">
+          <h2 id="works-title">Selected work</h2>
+          <p>Four ongoing projects · Updated July 2026</p>
+        </header>
+        <div class="project-grid">
+          <article class="project">
+            <div class="project-meta">
+              <span>01</span>
+              <span>Application</span>
+              <span>iOS · 2026</span>
             </div>
-          </div>
-          <aside class="hero-panel" aria-label="Archive categories">
-            <dl>
-              <div>
-                <dt>Focus</dt>
-                <dd>Software and small tools</dd>
-              </div>
-              <div>
-                <dt>Experiments</dt>
-                <dd>Games, systems, motion</dd>
-              </div>
-              <div>
-                <dt>Records</dt>
-                <dd>Writing and photography</dd>
-              </div>
-            </dl>
-          </aside>
-        </section>
-
-        <section class="section" id="works" aria-labelledby="works-title">
-          <div class="section-heading">
-            <h2 id="works-title">Works</h2>
-            <p>Finished releases, early prototypes, and long-running creative threads gathered with quiet structure and room to grow.</p>
-          </div>
-          <div class="grid">
-            <article class="card" id="apps">
-              <span class="card-number">01</span>
-              <h3>Apps</h3>
-              <p>Small tools and mobile products designed around clarity, rhythm, and daily use.</p>
-            </article>
-            <article class="card" id="games">
-              <span class="card-number">02</span>
-              <h3>Games</h3>
-              <p>Experimental game systems, aircraft combat concepts, pilots, upgrades, and interactive mechanics.</p>
-            </article>
-            <article class="card" id="books">
-              <span class="card-number">03</span>
-              <h3>Books</h3>
-              <p>Long-form writing projects, fictional worlds, and serialized manuscripts.</p>
-            </article>
-            <article class="card" id="photography">
-              <span class="card-number">04</span>
-              <h3>Photography</h3>
-              <p>Selected visual records, travel fragments, and personal observation.</p>
-            </article>
-          </div>
-        </section>
-
-        <section class="section" aria-labelledby="usage-title">
-          <div class="section-heading">
-            <h2 id="usage-title">Current Product</h2>
-            <p>The first public product entry in the archive, prepared with App Store support and privacy pages.</p>
-          </div>
-          <article class="product-card">
-            <div class="product-mark" aria-hidden="true">U</div>
-            <div>
-              <p class="product-meta">iOS App</p>
-              <h3>Usage</h3>
-              <p>Usage is a lightweight iOS utility designed to help users understand and track their AI usage, reset rhythm, and weekly usage patterns in a simple visual format.</p>
-              <div class="card-actions">
-                <a class="button" href="privacy/usage/">Privacy Policy</a>
-                <a class="button secondary" href="support/usage/">Support</a>
+            <div class="project-visual" tabindex="0" data-project aria-label="Usage, iOS application">
+              <img src="assets/images/usage.webp" width="1800" height="1350" alt="Usage iOS app interface showing current and weekly AI usage" fetchpriority="high">
+              <div class="project-overlay">
+                <p class="project-state">Available for iOS</p>
+                <div class="project-details">
+                  <h3>Usage</h3>
+                  <p>A clear view of AI usage and reset rhythm.</p>
+                  <nav class="project-links" aria-label="Usage links">
+                    <a href="privacy/usage/">Privacy</a>
+                    <a href="support/usage/">Support</a>
+                  </nav>
+                </div>
               </div>
             </div>
           </article>
-        </section>
 
-        <section class="section" id="about" aria-labelledby="about-title">
-          <div class="section-heading">
-            <h2 id="about-title">About</h2>
-            <p>Bowen's Imprint / 博文之痕</p>
-          </div>
-          <div class="about-copy">
-            <p>Bowen's Imprint is a personal public archive for my independent software, games, writing, photography, and design experiments. It is designed as a quiet place to collect finished work, early prototypes, and future releases.</p>
-            <p>博文之痕是一个用于收藏我个人软件、游戏、文字、摄影与设计实验的公开档案。这里会逐步记录已经完成的作品、早期原型，以及未来发布的项目。</p>
-          </div>
-        </section>
-      </main>
+          <article class="project">
+            <div class="project-meta">
+              <span>02</span>
+              <span>Game</span>
+              <span>Prototype · 2026</span>
+            </div>
+            <div class="project-visual" tabindex="0" data-project aria-label="Thunder Fighter, experimental game">
+              <img src="assets/images/thunder-fighter.webp" width="1800" height="1350" alt="Thunder Fighter space combat interface with aircraft, enemies, and equipment HUD" loading="lazy">
+              <div class="project-overlay">
+                <p class="project-state">In development</p>
+                <div class="project-details">
+                  <h3>Thunder Fighter</h3>
+                  <p>Aircraft combat, pilots, systems, and upgrades.</p>
+                </div>
+              </div>
+            </div>
+          </article>
 
-      <footer class="site-footer">
-        <div class="footer-inner">
-          <div>
-            <strong>Bowen's Imprint / 博文之痕</strong><br>
-            Contact: <a href="mailto:by294517@my.ncwu.edu">by294517@my.ncwu.edu</a>
-          </div>
-          <div class="footer-links" aria-label="Footer navigation">
-            <a href="#apps">Apps</a>
-            <a href="#games">Games</a>
-            <a href="#books">Books</a>
-            <a href="#photography">Photography</a>
-            <a href="privacy/usage/">Privacy</a>
-          </div>
+          <article class="project">
+            <div class="project-meta">
+              <span>03</span>
+              <span>Writing</span>
+              <span>15 chapters</span>
+            </div>
+            <div class="project-visual" tabindex="0" data-project aria-label="Ten Weapons, Chinese novel">
+              <img src="assets/images/ten-weapons.webp" width="1800" height="1350" alt="Dark green book cover for the Chinese novel Ten Weapons" loading="lazy">
+              <div class="project-overlay">
+                <p class="project-state">Manuscript</p>
+                <div class="project-details">
+                  <h3>Ten Weapons <span lang="zh-Hans">十把武器</span></h3>
+                  <p>A long-form wuxia world told through people and weapons.</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-meta">
+              <span>04</span>
+              <span>Photography</span>
+              <span>Open archive</span>
+            </div>
+            <div class="project-visual" tabindex="0" data-project aria-label="Photography archive">
+              <img src="assets/images/photography-placeholder.webp" width="1800" height="1350" alt="Quiet architectural light and shadow reserved for the photography archive" loading="lazy">
+              <div class="project-overlay">
+                <p class="project-state">First selection pending</p>
+                <div class="project-details">
+                  <h3>Photography</h3>
+                  <p>Personal observations, awaiting the first selection.</p>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
-      </footer>
-    </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-name">Bowen's Imprint <span lang="zh-Hans">/ 博文之痕</span></p>
+        <a class="footer-contact" href="mailto:by294517@my.ncwu.edu">by294517@my.ncwu.edu</a>
+        <nav class="footer-links" aria-label="Legal and support links">
+          <a href="privacy/usage/">Usage Privacy</a>
+          <a href="support/usage/">Support</a>
+        </nav>
+        <p class="footer-year">© 2026 Bowen</p>
+      </div>
+    </footer>
   </body>
 </html>
