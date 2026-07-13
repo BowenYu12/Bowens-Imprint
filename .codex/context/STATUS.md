@@ -42,6 +42,14 @@
 
 ## Recent completed work
 
+- 2026-07-12: Diagnosed a repeated blank/unavailable preview report. No `MWEB`
+  repository exists locally; the active website is `Bowens-Imprint`. The temporary
+  local preview process had stopped, while the published GitHub Pages homepage and
+  its CSS, JavaScript, and image assets still returned HTTP 200. Headless Chrome
+  rendered identical local and public pages with all four images loaded and no
+  console or request errors. Added `scripts/preview.sh` and standardized the readable
+  local address as `http://localhost:4173/`; documented that the current permanent
+  public URL is the GitHub Pages project URL and that no custom domain is configured.
 - 2026-07-12: Recolored the Thunder Fighter gallery artwork from a dark neon-blue
   scene to a light fog-gray, sage, graphite, and muted clay palette. The gameplay
   composition and equipment references remain intact, while the image now shares

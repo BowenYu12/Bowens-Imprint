@@ -13,6 +13,7 @@
 | `assets/main.js` | Locale application/persistence plus project and keyboard interactions |
 | `assets/images/*.webp` | Optimized 1800 × 1350 project artwork for the homepage |
 | `assets/favicon.svg` | Minimal site icon |
+| `scripts/preview.sh` | Idempotent local preview entry point at `localhost:4173` |
 
 ## Runtime model
 
@@ -45,4 +46,6 @@
 The README describes GitHub Pages deployment from the `main` branch and repository
 root. No package manager, static-site generator, CI workflow, or automated test suite
 is currently present. Serving the repository root is the production-equivalent local
-test. Local rendering and published-site verification are separate checks.
+test. `scripts/preview.sh` starts that temporary local server; the address stops
+working when the process ends. Local rendering and published-site verification are
+separate checks. No custom domain or repository `CNAME` file is currently configured.

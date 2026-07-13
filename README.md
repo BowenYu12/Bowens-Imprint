@@ -12,13 +12,18 @@ Bowen's Imprint is a dependency-free personal portfolio and product-support site
 
 ## Local preview
 
-Run a static server from the repository root:
+Run the project preview script from the repository root:
 
 ```bash
-python3 -m http.server 4173 --bind 127.0.0.1
+./scripts/preview.sh
 ```
 
-Then open `http://127.0.0.1:4173/`.
+Then open `http://localhost:4173/`.
+
+`localhost` is the readable hostname for this computer's loopback address. The
+preview exists only while its server process is running; after closing the terminal,
+restarting the computer, or ending the process, run the script again. It is a local
+development address and is not accessible to the public internet.
 
 For this repository, serving the root directory is the production-equivalent test. There is no separate build output folder.
 
@@ -55,6 +60,11 @@ Public URLs:
 - Homepage: `https://bowenyu12.github.io/Bowens-Imprint/`
 - Usage privacy: `https://bowenyu12.github.io/Bowens-Imprint/privacy/usage/`
 - Usage support: `https://bowenyu12.github.io/Bowens-Imprint/support/usage/`
+
+The `github.io` address is the current permanent public address. A shorter branded
+address such as `https://bowensimprint.com/` requires ownership of that domain,
+GitHub Pages custom-domain configuration, DNS records, and HTTPS enforcement. Do
+not add a `CNAME` file until the exact domain has been purchased and configured.
 
 ## Contact
 
